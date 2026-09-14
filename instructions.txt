@@ -1,0 +1,55 @@
+PAMS - Paragon Apartment Management System
+How to Run the System
+==============================================
+Ahmed Saad (24062019) | Omar Hassanin (24062048) | Group 33
+
+WHAT YOU NEED
+-------------
+- Python 3.10 or higher (download from python.org)
+- PyQt6 (install with command below)
+
+SETUP STEPS
+-----------
+Step 1: Extract the zip file
+    Extract the zip file. Open the pams folder inside it.
+    You should see main.py inside the pams folder.
+
+Step 2: Open a terminal inside the pams folder
+    On Windows: go into the pams folder, click the address bar, type cmd, press Enter.
+
+Step 3: Install PyQt6
+    pip install PyQt6
+
+Step 4: Run the app
+    python main.py
+    The login window will open. The database is created automatically on first run.
+
+LOGIN CREDENTIALS
+-----------------
+Role                Email                       Password
+----                -----                       --------
+Administrator       admin1@pams.com             admin123
+Front-desk Staff    frontdesk1@pams.com         desk123
+Finance Manager     finance1@pams.com           finance123
+Maintenance Staff   maintenance1@pams.com       maintenance123
+Manager             manager1@pams.com           manager123
+Admin (London)      admin2@pams.com             admin123
+Front-desk (Cardiff)frontdesk2@pams.com         desk123
+
+HOW TO RUN THE AUTOMATED TESTS
+-------------------------------
+    pip install pytest
+    python -m pytest tests/test_pams.py -v
+    All 52 tests should pass.
+
+RESET THE DATABASE
+------------------
+Delete the database file and run the app again:
+    del database\pams.db
+    python main.py
+
+TROUBLESHOOTING
+---------------
+- App doesnt start: make sure you are inside the pams folder where main.py is
+- Module not found: run pip install PyQt6 again
+- Database error: delete database\pams.db and run again

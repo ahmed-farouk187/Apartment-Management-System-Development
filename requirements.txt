@@ -1,0 +1,13 @@
+Python packages required to run PAMS:
+
+PyQt6>=6.6.0
+
+To install:
+pip install PyQt6
+
+Full pip list (packages used):
+PyQt6
+PyQt6-Qt6
+PyQt6-sip
+
+Note: SQLite is built into Python, no separate installation needed.
